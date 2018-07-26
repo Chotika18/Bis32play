@@ -1,0 +1,49 @@
+@(content :Html)
+<html>
+    <head>
+        <title>Clean</title>
+
+
+        <link rel="stylesheet"href="/assets/stylesheets/bootstrap3/css/bootstrap.css">
+
+
+        <link rel="stylesheets" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+
+    </head>
+    <body style="background-color: lightseagreen;font-family: SanamDeklenchaya" text="#ff69b4" >
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <table width=100% style="border:1px dashed #ffaacc;" cellspacing="5" bgcolor="#ffaacc" cellpadding="5"><tr><td style="border:1px dashed white;font-size: 75;text-align: center" bgcolor="#db7093">
+                        <br>♥ C l e a n F o o d ♥</td></tr></table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Welcome </a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/home">Home</a></li>
+                        <li><a href="/manu">Manu </a></li>
+                        <li><a href="#">Topping</a></li>
+                        <li><a href="#">Order</a></li>
+                        <li><a href="#">Payment</a></li>
+                        <li><a href="#">Admin</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+        @content
+        </div>
+    </body>
+</html>
